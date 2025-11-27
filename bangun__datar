@@ -1,0 +1,25 @@
+import math
+
+def luas_persegi(sisi):
+    return sisi * sisi
+
+def luas_segitiga(alas, tinggi):
+    return 0.5 * alas * tinggi
+
+def luas_lingkaran(jari_jari):
+    return math.pi * jari_jari * jari_jari
+
+def luas_ketupat(diagonal1, diagonal2):
+    return 0.5 * diagonal1 * diagonal2
+
+def luas_jajar_genjang(alas, tinggi):
+    return alas * tinggi
+
+import bangun_datar
+
+print("====Luas Bangun Datar====")
+print(f"Luas Persegi: {bangun_datar.luas_persegi(5)}")
+print(f"Luas Segitiga: {bangun_datar.luas_segitiga(4, 6)}")
+print(f"Luas Lingkaran: {bangun_datar.luas_lingkaran(7)}")
+print(f"Luas Ketupat: {bangun_datar.luas_ketupat(6, 8)}")
+print(f"Luas Jajar Genjang: {bangun_datar.luas_jajar_genjang(5, 10)}")
